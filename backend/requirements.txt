@@ -1,22 +1,29 @@
 # Core Framework
-fastapi>=0.104.0
-uvicorn[standard]>=0.24.0
-python-multipart>=0.0.6
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
 
 # Image Processing
-Pillow>=10.0.0
-numpy>=1.24.0
-opencv-python>=4.8.0
+Pillow==10.2.0
+numpy==1.26.3
+opencv-python==4.9.0.80
 
 # Deep Learning
-torch>=2.0.0
-torchvision>=0.15.0
+torch==2.2.2
+torchvision==0.17.2
 
-# MiDaS depth estimation (auto-downloaded via torch.hub)
-# No separate installation needed
+# MiDaS Dependencies
+timm==0.9.12
+
+# Segment Anything Model
+git+https://github.com/facebookresearch/segment-anything.git
 
 # Data Validation
-pydantic>=2.0.0
+pydantic==2.5.3
 
-# Production
-gunicorn>=21.2.0
+# Utilities
+aiofiles==23.2.1
+python-dotenv==1.0.0
+
+# Production (optional)
+gunicorn==21.2.0
